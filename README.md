@@ -6,6 +6,9 @@
 ### 起動方法
  - `rails server`
 
+### テスト方法
+ - `bundle exec rake`
+
 ### ブラウザで見る方法
  - http://localhost:3000/
 
@@ -36,7 +39,7 @@ rails db:migrate
 ## メモ
 
 * 動いた Ruby version
- - ruby 2.6.3p62 (2019-04-16 revision 67580) [x64-mingw32]
+   - ruby 2.6.3p62 (2019-04-16 revision 67580) [x64-mingw32]
 
 * System dependencies
 
