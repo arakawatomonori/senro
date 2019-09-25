@@ -1,25 +1,31 @@
 # README
 
-## 参考にしたテキスト
- - https://railsguides.jp/getting_started.html
+## セットアップ方法
 
-### セットアップ方法
-#### Windowsの場合
+### Macの場合
+ - Terminal.app を起動する
+ - senroディレクトリに移動する
+ - `./scripts/setup-macos.sh` と実行する
+
+### Windows10の場合
  - Windowsボタンを右クリックしてPowerShellを管理者として起動
  - `Set-ExecutionPolicy Bypass` と実行する
  - senroディレクトリに移動する
  - `./scripts/setup-windows.ps1` と実行する
 
-### 起動方法
+## 起動方法
  - `rails server`
 
-### テスト方法
+## テスト方法
  - `rails db:migrate RAILS_ENV=test`
  - `bundle exec rake`
 
-### ブラウザで見る方法
+## ブラウザで見る方法
  - http://localhost:3000/
 
+
+## 参考にしたテキスト
+ - https://railsguides.jp/getting_started.html
 
 ### 使ったコマンド
 ```
@@ -31,8 +37,6 @@ rails generate controller Articles
 rails generate model Article title:string text:text
 rails db:migrate
 ```
-
-
 
 ## 編集した箇所
  - app/stylesheets/welcome.scss
@@ -47,21 +51,6 @@ rails db:migrate
 ## メモ
 
 * 動いた Ruby version
-   - ruby 2.6.3p62 (2019-04-16 revision 67580) [x64-mingw32]
-
-* System dependencies
-   - sqlite3
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
+    - ruby 2.6.3p62 (2019-04-16 revision 67580) [x64-mingw32]
 
 * Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
