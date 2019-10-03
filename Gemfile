@@ -3,11 +3,11 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.6.3'
 
-group :development, :test do
+group :test do
   gem 'sqlite3'
 end
 
-group :production do
+group :development, :production do
   gem 'pg', '~> 0.18'
 end
 
