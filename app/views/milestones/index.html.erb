@@ -1,18 +1,27 @@
 <h1>Listing milestones</h1>
-   <%= link_to 'New milestone', new_milestone_path %>
-   <table>
-     <tr>
-       <th>Name</th>
-       <th>Distance</th>
-       <th>Photo_url</th>
-       <th></th>
-     </tr>
-     <% @milestones.each do |milestone| %>
-       <tr>
-         <td><%= milestone.name %></td>
-         <td><%= milestone.distance %></td>
-         <td><img src=<%= milestone.photo_url %> /></td>
-         <td><%= link_to 'Show', milestone_path(milestone) %></td>
-       </tr>
-     <% end %>
-   </table>
+<!-- comment -->
+<!-- <%= %> の中はrubyスクリプトとして評価される -->
+<!-- link_to 文字列　url という記法でリンクを生成　-->
+<%= link_to 'New milestone', new_milestone_path %>
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Distance</th>
+    <th>Photo_url</th>
+    <th></th>
+    <th></th>
+  </tr>
+  <!-- milestones の中にはMilestonesモデルがすべてはいっている -->
+  <!-- each =　それぞれに -->
+  <!-- do からendまで繰り返す -->
+  <% @milestones.each do |milestone| %>
+    <tr>
+      <td><%= milestone.name %></td>
+      <td><%= milestone.distance %></td>
+      <td><img src=<%= milestone.photo_url %> /></td>
+      <td><%= link_to 'Show', milestone_path(milestone) %></td>
+      <td><%= link_to 'Edit', edit_milestone_path(milestone) %></td>
+      <td><%= link_to "Delete", milestone_path(milestone.id), method: :delete %></td>
+    </tr>
+  <% end %>
+</table>
