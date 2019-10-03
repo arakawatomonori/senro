@@ -1,17 +1,21 @@
+<!-- form_with で　htmlフォームを生成 -->
 <%= form_with model: @milestone, local: true do |form| %>
-    <p>
-      <%= form.label :name %><br>
-      <%= form.text_field :name %>
-    </p>
-    <p>
-      <%= form.label :distance %><br>
-      <%= form.text_field :distance %>
-    </p>
-    <p>
-      <%= form.label :photo_url %><br>
-      <%= form.text_field :photo_url %>
-    </p>
-    <p>
-      <%= form.submit %>
-    </p>
-  <% end %>
+  <p>
+    <!-- <label for="milestone_name">Name</label> -->
+    <%= form.label :name %>
+    <br>
+    <!-- <input type="text" name="milestone[name]" id="milestone_name"> -->
+    <%= form.text_field :name %>
+  </p>
+  <p>
+    <%= form.label :distance %><br>
+    <%= form.text_field :distance %>
+  </p>
+  <p>
+    <%= form.label :photo_url %><br>
+    <%= form.text_field :photo_url %>
+  </p>
+  <p>
+    <%= form.submit %>
+  </p>
+<% end %>

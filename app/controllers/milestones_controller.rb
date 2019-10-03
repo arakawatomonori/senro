@@ -58,4 +58,16 @@ class MilestonesController < ApplicationController
     # /milestones
     redirect_to milestones_path
   end
+
+  # DELETE /milestones/:id
+  def destroy
+    #　Milestoneモデルのidを取得
+    @milestone = Milestone.find(params[:id])
+    #  既存のMilestoneモデルを消去
+    @milestone.destroy
+    # /milestones
+    redirect_to milestones_path
+  end
+  
+
 end
