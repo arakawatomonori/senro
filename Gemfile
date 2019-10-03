@@ -8,7 +8,7 @@ group :test do
 end
 
 group :development, :production do
-  gem 'pg', '~> 0.18'
+  gem 'pg', '~> 1.1.4'
 end
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'

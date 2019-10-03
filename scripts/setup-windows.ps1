@@ -3,5 +3,7 @@ cinst ruby
 cinst msys2
 refreshenv
 ridk install 1 2 3
+gem update --system
+gem install rake
 gem install bundler
 bundle install

@@ -13,18 +13,22 @@
  - senroディレクトリに移動する
  - `./scripts/setup-windows.ps1` と実行する
 
+
 ## 起動方法
- - `rails server`
+ - `bundle exec rake db:migrate`
+ - `bundle exec rails server`
 
 ## テスト方法
- - `rails db:migrate RAILS_ENV=test`
+ - `bundle exec rake db:migrate RAILS_ENV=test`
  - `bundle exec rake`
+
 
 ## ブラウザで見る方法
  - http://localhost:3000/
+ - https://senro.herokuapp.com/
 
 
-## 参考にしたテキスト
+## 参考にしているテキスト
  - https://railsguides.jp/getting_started.html
 
 ### 使ったコマンド
@@ -38,7 +42,7 @@ rails generate model Article title:string text:text
 rails db:migrate
 ```
 
-## 編集した箇所
+### 編集した箇所
  - app/stylesheets/welcome.scss
  - app/controllers/welcome_controller.rb
  - app/controllers/articles_controller.rb
@@ -48,9 +52,9 @@ rails db:migrate
  - app/views/articles/show.html.erb
  - app/config/routes.rb
 
+
 ## メモ
 
 * 動いた Ruby version
     - ruby 2.6.3p62 (2019-04-16 revision 67580) [x64-mingw32]
 
-* Services (job queues, cache servers, search engines, etc.)
