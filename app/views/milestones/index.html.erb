@@ -1,0 +1,18 @@
+<h1>Listing milestones</h1>
+   <%= link_to 'New milestone', new_milestone_path %>
+   <table>
+     <tr>
+       <th>Name</th>
+       <th>Distance</th>
+       <th>Photo_url</th>
+       <th></th>
+     </tr>
+     <% @milestones.each do |milestone| %>
+       <tr>
+         <td><%= milestone.name %></td>
+         <td><%= milestone.distance %></td>
+         <td><img src=<%= milestone.photo_url %> /></td>
+         <td><%= link_to 'Show', milestone_path(milestone) %></td>
+       </tr>
+     <% end %>
+   </table>
