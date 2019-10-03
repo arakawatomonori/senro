@@ -1,6 +1,10 @@
 class MilestonesController < ApplicationController
   def index
     @milestones = Milestone.all
+    respond_to do |format|
+      format.html
+      format.json { render :json => @milestones}
+    end
   end
   
   def show
