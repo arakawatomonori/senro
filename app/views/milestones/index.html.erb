@@ -6,6 +6,7 @@
        <th>Distance</th>
        <th>Photo_url</th>
        <th></th>
+       <th></th>
      </tr>
      <% @milestones.each do |milestone| %>
        <tr>
@@ -13,6 +14,7 @@
          <td><%= milestone.distance %></td>
          <td><img src=<%= milestone.photo_url %> /></td>
          <td><%= link_to 'Show', milestone_path(milestone) %></td>
+         <td><%= link_to 'Edit', edit_milestone_path(milestone) %></td>
        </tr>
      <% end %>
    </table>
