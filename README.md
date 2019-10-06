@@ -15,12 +15,14 @@
 
 
 ## 起動方法
- - `bundle exec rake db:migrate`
  - `bundle exec rails server`
 
 ## テスト方法
  - `bundle exec rake db:migrate RAILS_ENV=test`
  - `bundle exec rake`
+
+## データベース更新方法
+ - `bundle exec rake db:migrate`
 
 
 ## ブラウザで見る方法

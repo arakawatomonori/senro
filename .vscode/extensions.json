@@ -1,0 +1,13 @@
+{
+   "recommendations": [
+     "ms-ceintl.vscode-language-pack-ja",
+     "EditorConfig.editorconfig",
+     "oderwat.indent-rainbow",
+     "mosapride.zenkaku",
+     "rebornix.ruby",
+     "streetsidesoftware.code-spell-checker",
+     "visualstudioexptteam.vscodeintellicode",
+     "nickdemayo.vscode-json-editor",
+     "redhat.vscode-yaml"
+   ]
+}
