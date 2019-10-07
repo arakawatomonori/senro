@@ -3,7 +3,7 @@
   "language": "en",
   "dictionaryDefinitions": [
     { "name": "globish", "path": "./dict/globish.txt"},
-    { "name": "NSGL", "path": "./dict/NSGL.txt"},
+    { "name": "NSGL", "path": "./dict/NGSL3000.txt"},
     { "name": "prog-eng-basic", "path": "./dict/prog-eng-basic.txt"},
     { "name": "prog-eng-advance", "path": "./dict/prog-eng-advance.txt"}
   ],
