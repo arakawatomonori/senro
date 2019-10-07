@@ -3,31 +3,31 @@
 ## セットアップ方法
 
 ### Macの場合
- - Terminal.app を起動する
- - senroディレクトリに移動する
- - `./scripts/setup-macos.sh` と実行する
+  - Terminal.app を起動する
+  - senroディレクトリに移動する
+  - `./scripts/setup-macos.sh` と実行する
 
 ### Windows10の場合
- - Windowsボタンを右クリックしてPowerShellを管理者として起動
- - `Set-ExecutionPolicy Bypass` と実行する
- - senroディレクトリに移動する
- - `./scripts/setup-windows.ps1` と実行する
+  - Windowsボタンを右クリックしてPowerShellを管理者として起動
+  - `Set-ExecutionPolicy Bypass` と実行する
+  - senroディレクトリに移動する
+  - `./scripts/setup-windows.ps1` と実行する
 
 
 ## 起動方法
- - `bundle exec rails server`
+  - `bundle exec rails server`
 
 ## テスト方法
- - `bundle exec rake db:migrate RAILS_ENV=test`
- - `bundle exec rake`
+  - `bundle exec rake db:migrate RAILS_ENV=test`
+  - `bundle exec rake`
 
 ## データベース更新方法
- - `bundle exec rake db:migrate`
+  - `bundle exec rake db:migrate`
 
 
 ## ブラウザで見る方法
- - http://localhost:3000/
- - https://senro.herokuapp.com/
+  - http://localhost:3000/
+  - https://senro.herokuapp.com/
 
 
 ## Railsの基本的なディレクトリ構造
@@ -66,7 +66,7 @@ https://www.javadrive.jp/rails/ini/index7.html
 
 
 ## 参考にしているテキスト
- - https://railsguides.jp/getting_started.html
+  - https://railsguides.jp/getting_started.html
 
 
 ### 使ったコマンド
@@ -81,14 +81,14 @@ rails db:migrate
 ```
 
 ### 編集した箇所
- - app/stylesheets/welcome.scss
- - app/controllers/welcome_controller.rb
- - app/controllers/articles_controller.rb
- - app/views/welcome/index.html.erb
- - app/views/articles/index.html.erb
- - app/views/articles/new.html.erb
- - app/views/articles/show.html.erb
- - app/config/routes.rb
+  - app/stylesheets/welcome.scss
+  - app/controllers/welcome_controller.rb
+  - app/controllers/articles_controller.rb
+  - app/views/welcome/index.html.erb
+  - app/views/articles/index.html.erb
+  - app/views/articles/new.html.erb
+  - app/views/articles/show.html.erb
+  - app/config/routes.rb
 
 
 ## メモ
