@@ -30,8 +30,42 @@
  - https://senro.herokuapp.com/
 
 
+## Railsの基本的なディレクトリ構造
+(Modelという名前のModelがあったときの例)
+https://ja.wikipedia.org/wiki/Model_View_Controller
+
+ - app  **Railsアプリケーションのソースコードが入っているディレクトリ**
+   - controllers   **Controllerの入っているディレクトリ**
+     - `models_controller.rb`
+   - helpers
+     - `model_helper.rb`
+   - models   **Modelの入っているディレクトリ**
+     - `model.rb`
+   - views   **Viewの入っているディレクトリ**
+     - models
+       - `_form.html.erb`
+       - `edit.html.erb`
+       - `index.html.erb`
+       - `new.html.erb`
+       - `show.html.erb`
+ - config   **設定ファイルが入っているディレクトリ**
+   - `routes.rb`   **RailsアプリケーションとURLの対応付けを定義している設定ファイル**
+ - db   **データベース関係のファイルが入っているディレクトリ**
+   - migrate   **データベースマイグレーションのためのファイルが入っているディレクトリ**
+     - `20YYMMDDHHMMSS_create_models.rb
+   - `schema.rb`
+ - test   **テスト関係のファイルが入っているディレクトリ**
+   - controllers
+     - `models_controller.rb`
+   - fixtures
+     - `models.yml`
+   - models
+     - `model_text.rb`
+
+
 ## 参考にしているテキスト
  - https://railsguides.jp/getting_started.html
+
 
 ### 使ったコマンド
 ```
