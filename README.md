@@ -17,7 +17,12 @@
 ## 起動方法
   - `bundle exec rails server`
 
+## ブラウザで見る方法
+  - http://localhost:3000/
+  - https://senro.herokuapp.com/
+
 ## テスト方法
+  - `bundle exec rubocop`
   - `bundle exec rake db:migrate RAILS_ENV=test`
   - `bundle exec rake`
 
@@ -25,38 +30,31 @@
   - `bundle exec rake db:migrate`
 
 
-## ブラウザで見る方法
-  - http://localhost:3000/
-  - https://senro.herokuapp.com/
-
-
 ## Railsの基本的なディレクトリ構造
 (Modelという名前のModelがあったときの例)
+
 https://ja.wikipedia.org/wiki/Model_View_Controller
 https://www.javadrive.jp/rails/ini/index7.html
 
-
-  - app  **Railsアプリケーションのソースコードが入っているディレクトリ**
-    - controllers   **Controllerの入っているディレクトリ**
+  - **app**   Railsアプリケーションのソースコードが入っているディレクトリ
+    - **controllers**   Controllerの入っているディレクトリ
       - `models_controller.rb`
-    - helpers
-      - `model_helper.rb`
-    - models   **Modelの入っているディレクトリ**
+    - **models**   Modelの入っているディレクトリ
       - `model.rb`
-    - views   **Viewの入っているディレクトリ**
+    - **views**   Viewの入っているディレクトリ
       - models
         - `_form.html.erb`
         - `edit.html.erb`
         - `index.html.erb`
         - `new.html.erb`
         - `show.html.erb`
-  - config   **設定ファイルが入っているディレクトリ**
-    - `routes.rb`   **RailsアプリケーションとURLの対応付けを定義している設定ファイル**
-  - db   **データベース関係のファイルが入っているディレクトリ**
-    - migrate   **データベースマイグレーションのためのファイルが入っているディレクトリ**
-      - `20YYMMDDHHMMSS_create_models.rb
+  - **config**   設定ファイルが入っているディレクトリ
+    - `routes.rb`   RailsアプリケーションとURLの対応付けを定義している設定ファイル
+  - **db**   データベース関係のファイルが入っているディレクトリ
+    - **migrate**   データベースマイグレーションのためのファイルが入っているディレクトリ
+      - `20YYMMDDHHMMSS_create_models.rb`
     - `schema.rb`
-  - test   **テスト関係のファイルが入っているディレクトリ**
+  - **test**   テスト関係のファイルが入っているディレクトリ
     - controllers
       - `models_controller.rb`
     - fixtures
