@@ -31,18 +31,20 @@
 
 
 ## Railsの基本的なディレクトリ構造
-(Modelという名前のModelがあったときの例)
+(Articleという名前のModelがあったときの例)
 
 https://ja.wikipedia.org/wiki/Model_View_Controller
 https://www.javadrive.jp/rails/ini/index7.html
 
   - `app/`   Railsアプリケーションのソースコードが入っているディレクトリ
     - `controllers/`   Controllerの入っているディレクトリ
-      - `models_controller.rb`
+      - `articles_controller.rb`
     - `models/`   Modelの入っているディレクトリ
-      - `model.rb`
+      - `article.rb`
     - `views/`   Viewの入っているディレクトリ
-      - `models/`
+      - `layouts/`
+        - `application.html.erb`
+      - `articles/`
         - `_form.html.erb`
         - `edit.html.erb`
         - `index.html.erb`
@@ -52,15 +54,15 @@ https://www.javadrive.jp/rails/ini/index7.html
     - `routes.rb`   RailsアプリケーションとURLの対応付けを定義している設定ファイル
   - `db/`   データベース関係のファイルが入っているディレクトリ
     - `migrate/`   データベースマイグレーションのためのファイルが入っているディレクトリ
-      - `20YYMMDDHHMMSS_create_models.rb`
+      - `20YYMMDDHHMMSS_create_articles.rb`
     - `schema.rb`
   - `test/`   テスト関係のファイルが入っているディレクトリ
     - `controllers/`
-      - `models_controller.rb`
+      - `articles_controller.rb`
     - `fixtures/`
-      - `models.yml`
+      - `articles.yml`
     - `models/`
-      - `model_text.rb`
+      - `article_test.rb`
 
 
 ## 参考にしているテキスト
