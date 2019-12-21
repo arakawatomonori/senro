@@ -35,3 +35,9 @@
 yarn-debug.log*
 .yarn-integrity
 .rbenv-win
+
+###
+#
+/vendor/bundle
+package-lock.json
+
