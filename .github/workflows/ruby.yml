@@ -15,8 +15,12 @@ jobs:
         ruby-version: 2.6.x
     - name: Build and test with Rake
       run: |
-        sudo apt install -y libpq-dev libsqlite3-dev
         gem install bundler
+        sudo apt install -y libpq-dev libsqlite3-dev
         bundle install --jobs 4 --retry 3
         rails db:migrate RAILS_ENV=test
+        npm install yarn
+        yarn install
+        bundle exec rails webpacker:install
+        bundle exec rails webpacker:compile
         bundle exec rake
