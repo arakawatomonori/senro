@@ -5,14 +5,14 @@ on: [push]
 jobs:
   build:
 
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
 
     steps:
     - uses: actions/checkout@v2
     - name: Set up Ruby 2.6
       uses: ruby/setup-ruby@v1
       with:
-        ruby-version: 2.6.6
+        ruby-version: 2.6.10
     - name: Build and test with Rake
       run: |
         gem install bundler
