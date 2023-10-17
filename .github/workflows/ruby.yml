@@ -28,3 +28,5 @@ jobs:
         bundle exec rails webpacker:install
         bundle exec rails webpacker:compile
         bundle exec rake
+      env: NODE_OPTIONS: --openssl-legacy-provider
+
