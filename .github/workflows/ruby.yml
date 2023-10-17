@@ -5,20 +5,21 @@ on: [push]
 jobs:
   build:
 
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
 
     steps:
     - uses: actions/checkout@v2
     - name: Set up Ruby 2.6
       uses: ruby/setup-ruby@v1
       with:
-        ruby-version: 2.6.6
+        ruby-version: 2.6.10
     - name: Build and test with Rake
       run: |
         gem install bundler
         sudo apt install -y libpq-dev libsqlite3-dev
         bundle install --jobs 4 --retry 3
         rails db:migrate RAILS_ENV=test
+        node -v
         npm install yarn
         yarn install
         bundle exec rails webpacker:install
